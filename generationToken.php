@@ -15,7 +15,7 @@ $MID=$_GET['MID'];
 
 if ( isset( $MID ) ){
 
-    $enablePaymentMode=array(
+    $enablePaymentMode[]=array(
         "mode"    => "UPI",
         "channels" => "UPIPUSH",
     );
@@ -33,6 +33,8 @@ if ( isset( $MID ) ){
         "userInfo"      => array(
             "custId"    => "CUST_001",
         ),
+
+       
     );
 
     /*
